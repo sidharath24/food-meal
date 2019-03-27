@@ -4,29 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+	
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:id="@+id/linearLayout1"
+		android:layout_marginTop="80dp" >
+		<TextView
+			android:text="Small Text"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/textView3" />
+		<SeekBar
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/seekBar1" />
+		<EditText
+			android:inputType="number"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/editText2" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:id="@+id/linearLayout2"
+		android:layout_marginTop="130dp" >
+		<TextView
+			android:text="Small Text"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/textView4" />
+		<EditText
+			android:inputType="numberDecimal"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/editText3" />
+	</LinearLayout>
+	<GridLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:rowCount="2"
+		android:columnCount="2"
+		android:id="@+id/gridLayout1" >
+		<TextView
+			android:text="Small Text"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/textView5" />
+		<Spinner
+			android:id="@+id/spinner1" />
+		<TextView
+			android:text="Small Text"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/textView6" />
+		<EditText
+			android:inputType="numberDecimal"
+			android:id="@+id/editText4" />
+	</GridLayout>
+	
+	
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </android.support.design.widget.CoordinatorLayout>
